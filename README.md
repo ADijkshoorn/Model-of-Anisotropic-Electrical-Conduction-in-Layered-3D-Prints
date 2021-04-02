@@ -13,5 +13,8 @@ P.O. Box 217
 7500 AE Enschede
 The Netherlands
 
-***General Introduction***
-This code explanation
+***Introduction***
+The code implements the model for anisotropic electrical conduction in layered 3D-prints, where it works for an arbitrary number of traxels (short for track-elements). It has the possibility to define the boundary conditions by means of a vector for the left boundaries and a vector for the right boundaries, where boundaries can be open, connected to other traxels, have input voltages and can be grounded. 
+The code consists of various functions, where the "InitParameters" function allows for altering the material properties, parameters and boundary conditions.
+
+From the parameters the code then calculates the voltages, current density and power dissipation for every traxel as well as the total resistance of the 3D-print. The model has been verified through simplified analytical examples and Finite Element Method simulations, showing good correspondence.
